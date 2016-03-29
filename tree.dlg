@@ -1,0 +1,307 @@
+  ## COMMON INTEREST OF THE RING ##
+
+[RING-start]
+
+ELDER POSA: We have only one choice.
+ELDER POSA: The Random Integer Number Generator must be...
+ELDER POSA: ...invalidated.
+
+* Stay awhile, and listen. [RING-1]
+* Ain't got time for that! [END]
+
+[RING-1]
+
+DWARF: Then what are we waiting for?
+ELDER POSA: The RING cannot be invalidated, by any procedure that we here possess.
+ELDER POSA: The RING was made in the fires of Mt. Pto. Only there can it be unmade.
+ELDER POSA: It must be taken deep into Ptab and undergo Inter Partes Review,
+ELDER POSA: before it can be cast back into the firey chasm from whence it came.
+
+* They're getting to the good part. [RING-2]
+* On second thought, I should go. [END]
+
+[RING-2]
+
+BORED O'MERE: One does not simply walk into Ptab and begin Inter Partes Review.
+BORED O'MERE: Its black gates are guarded by more than just trolls.
+BORED O'MERE: There is evil there that does not sleep and the great eye is ever watchful.
+BORED O'MERE: Tis a barren wasteland, riddled with fire and ash and dust.
+BORED O'MERE: The very air you breathe is a poisonous fume. Not with ten thousand attorneys could you do this. It is folly.
+
+* (Interrupt) Excuse me, but I am also on a quest to invalidate the RING. [RING-3]
+* This is getting way too complicated. [END]
+
+[RING-3]
+
+MERLIN: Your bravery is admirable. I will help you bear this burden of proof. We shall form a Common Interest of the RING.
+FOGHORN: The Common Interest has my sword.
+LEGOLASS: And the Common Interest has my bow.
+DWARF: And my axe!!
+
+* Awesome, count me in! [RING-join]
+
+[RING-join]
+
+MERLIN: Wait, aren't you going to contribute anything?
+MERLIN: ...
+FOGHORN: ...
+ELDER POSA: ...
+ARAGORN: Well this is awkward. We kind of imagined that everyone in the Common Interest would contribute something. I'm afraid we'll have to go our separate ways.
+
+* Oh... [RING-leave]
+
+[RING-leave]
+
+ELDER POSA: Well, see you all all the Patent Office. Good luck!
+
+* You've got to be kidding me... [END]
+
+  ## END COMMON INTEREST OF THE RING ##
+
+  ## TOWN GUARD DIALOGUE ##
+[guard-1]
+
+I wouldn't leave the village if I were you.
+I heard there's trolls and other NPEs out there.
+
+* NPEs? [guard-2]
+
+[guard-2]
+
+You know, Non-Player Entities. Anyway, it's not safe to leave town alone.
+
+* Where would I find company? [END]
+* I'll take my chances. [guard-3]
+
+[guard-3]
+
+Your funeral.
+  ## END TOWN GUARD DIALOGUE ##
+
+  ## SHOPKEEPER SEQUENCE 1 ##
+
+[SHOP1-start]
+MERCHANT: I hear you're in need of equipment! Want to see what I've got for sale?
+* Yes [SHOP1-list1]
+* No [END]
+
+[SHOP1-list1]
+MERCHANT: I'm afraid I don't have much in stock at the moment.
+* Rusty Dagger (1 G) [SHOP1-Rusty_Dagger]
+* Leave [END]
+
+[SHOP1-Rusty_Dagger]
+You received: 1 Rusty Dagger
+Equip Rusty Dagger?
+* Yes [SHOP1-Rusty_Dagger_Equip]
+* No [SHOP1-list1]
+
+[SHOP1-Rusty_Dagger_Equip]
+You look sharp holding that dagger. Get it? Har Har!
+* Wait, what's this on the handle? [SHOP1-License]
+
+[SHOP1-License]
+
+"NO EXPRESS OR IMPLIED LICENSES TO ANY CLAIMS, including without limitation the patents of BigCo,"
+"ARE GRANTED IN CONNECTION WITH THIS ARTICLE. You may use this article only as authorized by appropriate licenses."
+* What the heck? I need a separate license?! [SHOP1-list2]
+* I'm just going to ignore this for now. [END->SHOP1-list2]
+
+[SHOP1-list2]
+MERCHANT: Oh yeah, I almost forgot!
+* Rusty Dagger - SOLD OUT (1 G) [SHOP1-list2]
+* Rusty Dagger License (99999 G) [SHOP1-Rusty_Dagger_License]
+* Leave [END->SHOP2-list1]
+
+[SHOP1-Rusty_Dagger_License]
+MERCHANT: You seem to be a little short there, buddy.
+* Guess I'll come back when I've earned some more gold. [SHOP1-list2]
+
+  ## END SHOPKEEPER SEQUENCE 1 ##
+
+
+  ## SHOPEKEEPER SEQUENCE 2 ##
+
+[SHOP2-list1]
+MERCHANT: Hey, welcome back! I got some new items in stock!
+* Rusty Dagger - SOLD OUT (1 G) [SHOP2-list1]
+* Rusty Dagger License (99999 G) [SHOP2-License1]
+* Fully Licensed Gilded Bow (5 G) [SHOP2-Gilded_Bow]
+* Leave [END]
+
+[SHOP2-Gilded_Bow]
+MERCHANT: Excellent choice! Won't do you much good without something to shoot, though. Here, give it a 'shot'! Hahaha!
+You received: 1 Fully Licensed Gilded Bow and 99 Steel Arrows
+Equip Fully Licensed Gilded Bow?
+* Yes [SHOP2-Gilded_Bow_Equip]
+
+[SHOP2-Gilded_Bow_Equip]
+The Gilded Bow seems almost perfectly weighted for your hands. You feel ready to continue your quest!
+
+* Try the bow out on the target [SHOP2-Gilded_Bow_Shoot]
+
+[SHOP2-Gilded_Bow_Shoot]
+As you prepare to draw back, you notice something etched on the bow...
+"Congratulations on purchasing your new, fully licensed, Gilded Bow! Note: license for use of Arrows not included.
+You may use your Gilded Bow only as authorized by appropriate ammunition licenses."
+
+* Not again...[END->SHOP2-list2]
+
+[SHOP2-list2]
+MERCHANT: Hey, welcome back! I got some new items in stock!
+* Rusty Dagger - SOLD OUT (1 G) [SHOP2-list2]
+* Rusty Dagger License (99999 G) [SHOP2-License2]
+* Fully Licensed Gilded Bow - SOLD OUT (5 G) [SHOP2-list2]
+* Steel Arrow License (99999 G per arrow) [SHOP2-License2]
+* Leave [END]
+
+[SHOP2-License1]
+MERCHANT: You seem to be a little short there, buddy.
+* Guess I'll come back when I've earned some more gold. [SHOP2-list1]
+
+[SHOP2-License2]
+MERCHANT: Ha! You're kidding, right?
+* Guess I'll come back when I've earned some more gold. [SHOP2-list2]
+
+  ## END SHOPKEEPER SEQUENCE 2 ##
+
+
+  ## SPOONY BARD ##
+
+[BARD-start]
+SPOONY BARD: Wow, is that a Crystal of Transmitting? How did you get one of those?
+
+* I found it myself. [BARD-1]
+* None of your business! [END]
+
+[BARD-1]
+SPOONY BARD: You know, that Crystal of Transmitting would go perfectly with my Crystal of Receiving! Mind if I take a look?
+
+* Sure, why not! [BARD-2]
+* No thanks, I'll go it alone. [BARD-END]
+
+[BARD-2]
+SPOONY BARD: Thanks!!!
+SPOONY BARD: ...
+SPOONY BARD: Phew, took me forever to find this Crystal of Transmitting!
+
+* What?! I'm the one who found the Crystal of Transmitting! [BARD-3]
+* Well... I suppose we could work together. [BARD-4]
+
+[BARD-3]
+SPOONY BARD: I have no idea what you're talking about. I discovered this Crystal of Transmitting!
+
+* Well, I suppose we could work together. [BARD-4]
+* This is outrageous! [BARD-END]
+
+[BARD-4]
+SPOONY BARD: "Work together?" I have no idea what you're talking about.
+
+* This is outrageous! [BARD-END]
+
+[BARD-END]
+SPOONY BARD: See ya and good luck!
+
+* Bye. [END->BARD-END]
+
+  // After this point, replace future initiated dialogue with [BARD-END]
+
+  ## END OF SPOONY BARD ##
+
+  ## Random NPC Dialogue re: Bard ##
+
+[NPC0]
+If only we had a way to transmit AND receive. Alas...
+* OK [END]
+
+[NPC1]
+Did you hear about the bard?!
+* OK [END]
+
+[NPC2]
+I heard the bard discovered something new!
+* This is getting out of hand. [END]
+
+[NPC3]
+Can you believe the bard discovered a Crystal of Transmitting AND Receiving?
+* Gimme a break. [END]
+
+[NPC4]
+That bard is a genius. He's done it again!
+* ... [END]
+
+  ## end of random npc dialogue re: Bard ##
+
+[NPC5]
+
+There's a wise old man in a cave to the east.
+
+[OLDMAN-1]
+
+Ah, you've come!
+
+* You were expecting me? [OLDMAN-2]
+
+[OLDMAN-2]
+
+Since before you felt the call...
+That feeling you were meant to do great things, I know it's in your heart...
+The dreams? More than just dreams...
+
+* You-you mean? [OLDMAN-3]
+
+[OLDMAN-3]
+
+Yes, child. You are the chosen one.
+
+* I am? [OLDMAN-4]
+
+[OLDMAN-4]
+
+Destined from birth to save our land.
+
+* So now what? [OLDMAN-5]
+
+[OLDMAN-5]
+
+Born of brave blood and pure heart.
+Noble of spirit, steady of hand.
+
+* uh huh. [OLDMAN-6]
+
+[OLDMAN-6]
+
+From the humblest beginnings, sent for a mighty deed!
+
+* Can we, uh, cut to the chase? [OLDMAN-7]
+
+[OLDMAN-7]
+
+Patience.
+
+[TROLL]
+
+You encountered two trolls!
+
+* Attack [TROLL-attack]
+* Run [TROLL-run]
+
+[TROLL-attack]
+
+You attack the trolls. They hardly notice.
+You are smashed to bits.
+
+* GAME OVER [GAMEOVER]
+
+[TROLL-run]
+
+You try to run, but it's too late.
+You are smashed to bits.
+
+* GAME OVER [GAMEOVER]
+
+[GAMEOVER]
+
+THE END
+
+* GAME OVER [GAMEOVER]
